@@ -12,7 +12,7 @@
 💡 &nbsp;I like to explore new technologies and develop software solutions hardware based and learn new stuff about Linux.\
 🎓 &nbsp;I'm currently studying Embedded Systems - Computer Engineering at Politecnico di Torino.\
 🌱 &nbsp;I'm on track for working in the Aerospace world a day.\
-✉️ &nbsp;You can shoot me an email at gabriele.lagreca@gmail.com! I'll try to respond as soon as I can.\
+✉️ &nbsp;You can shoot me an email at gabriele.lagreca@gmail.com! I'll try to answer as soon as I can.\
 📄 &nbsp;Please have a look at my [Curriculum Vitae](https://drive.google.com/file/d/1ps-Ym7Qn0KsFb6uHMJJBfqpEiA2DGeFp/view) for more details about me. 
 
 <img alt="Night Coding" src="https://raw.githubusercontent.com/AVS1508/AVS1508/master/assets/Night-Coding.gif" align="right"/>
