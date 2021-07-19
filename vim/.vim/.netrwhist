@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/gabri97'
+let g:netrw_dirhist_3='/home/gabri97/.vim'
+let g:netrw_dirhist_2='/home/gabri97/ubuntu-wsl2-systemd-script'
+let g:netrw_dirhist_1='/home/gabri97/.oh-my-zsh'
