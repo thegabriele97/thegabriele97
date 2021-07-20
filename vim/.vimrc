@@ -19,17 +19,29 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'preservim/nerdtree' 
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'ryanoasis/vim-devicons'
+Plugin 'frazrepo/vim-rainbow'
 
 Plugin 'bling/vim-bufferline'
 Plugin 'tomtom/tcomment_vim'
+
 Plugin 'w0ng/vim-hybrid'
+Plugin 'ghifarit53/tokyonight-vim'
+Plugin 'joshdick/onedark.vim'
+Plugin 'kaicataldo/material.vim'
 
 " Plugin 'lifepillar/vim-mucomplete'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'puremourning/vimspector'
 
+Plugin 'sheerun/vim-polyglot'
+Plugin 'uiiaoo/java-syntax.vim'
+Plugin 'bfrg/vim-cpp-modern'
+
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+
+Plugin 'voldikss/vim-floaterm'
+
 
 
 " All of your Plugins must be added before the following line
@@ -58,8 +70,16 @@ let g:NERDTreeWinPos = "right"
 " let g:vimspector_enable_mappings = 'HUMAN'
 let g:vimspector_enable_mappings = 'VISUAL_STUDIO'
 
-let g:fzf_preview_window = 'right:50%'
-let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6  }  }
+" let g:fzf_preview_window = 'right:50%'
+" let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6  }  }
+let $FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --layout reverse --margin=1,4 --preview 'bat --color=always --style=numbers,changes --line-range :300 {}'"
+
+let g:floaterm_autoclose = 2 " close the popup window when the job exists
+let g:floaterm_width = 0.9
+let g:floaterm_height = 0.9
+
+let g:rainbow_active = 1
+
 
 " turn hybrid line numbers on
 :set number relativenumber
@@ -69,18 +89,42 @@ let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6  }  }
 :set completeopt-=preview
 :set updatetime=1000
 
-set background=dark
-colorscheme hybrid
+" set termguicolors
+"
+" let g:tokyonight_style = 'night' " available: night, storm
+" let g:tokyonight_enable_italic = 1
+"
+" colorscheme tokyonight
 
-nmap <F12> :NERDTreeToggle<CR>
-nmap <S-F12> :GitGutterToggle<CR>
-nmap gp :bp<CR>
-nmap gn :bn<CR>
-nmap g<Down> :res -10<CR>
-nmap g<Up>   :res +10<CR>
-nmap g<Left> :vertical res +10<CR>
-nmap g<Right> :vertical res -10<CR>
+" set background=dark
+" colorscheme hybrid
+"
+if (has('termguicolors'))
+  set termguicolors
+endif
 
-" packadd! vimspector
+let g:material_theme_style = 'ocean'
+let g:material_terminal_italics = 1
+let g:airline_theme = 'material'
+
+colorscheme material
+
+
+let mapleader=" " " space as <leader> key
+
+nmap <F12>     :NERDTreeToggle<CR>
+nmap <S-F12>   :GitGutterToggle<CR>
+nmap gp        :bp<CR>
+nmap gn        :bn<CR>
+nmap g<Down>   :res -10<CR>
+nmap g<Up>     :res +10<CR>
+nmap g<Left>   :vertical res +10<CR>
+nmap g<Right>  :vertical res -10<CR>
+nmap <leader>f :Files<CR>
+nmap <leader>F :GFiles<CR>
+nmap <leader>l :Buffers<CR>
+nmap <leader>t :FloatermToggle<CR>
+tmap <F12>     :FloatermToggle<CR>
+
 
 
