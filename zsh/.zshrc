@@ -116,10 +116,12 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
-
-alias ls='colorls --sd'
+# alias ls='colorls --sd'
+alias ls='colorls --sd --gs'
 alias cat='batcat'
 
+export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolv.conf 2>/dev/null):0
+export LIBGL_ALWAYS_INDIRECT=1
 
 source $(dirname $(gem which colorls))/tab_complete.sh
 source /home/gabri97/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
