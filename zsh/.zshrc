@@ -78,7 +78,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions docker docker-compose) 
+plugins=(git zsh-autosuggestions docker docker-compose zsh-fzf-history-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -114,6 +114,10 @@ source $ZSH/oh-my-zsh.sh
 
 alias ls='colorls --sd'
 alias bcat='batcat'
+alias v=/home/gabriele97/AppImages/nvim.appimage
 
-export PATH=$PATH:/home/gabriele97/.texlive2021/local/texlive/2021/bin/x86_64-linux
+# export PATH=$PATH:/home/gabriele97/.texlive2021/local/texlive/2021/bin/x86_64-linux
+export PATH=$PATH:/home/gabriele97/.texlive2021/local/texlive/2022/bin/x86_64-linux
+export PATH=$PATH:/home/gabriele97/Bin/nodejs/bin
+
 
